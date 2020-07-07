@@ -1,0 +1,11 @@
+do migrate -path migrations -database "postgres://root:secret@localhost:5432/restapi_dev?sslmode=disable" up
+do migrate -path migrations -database "postgres://root:secret@localhost:5432/restapi_test?sslmode=disable" up
+
+// Войти в базу restapi_dev (в контейнере)
+psql -d restapi_dev
+
+// Просмотр таблиц
+\dt
+
+// Информация о таблице users
+\d users

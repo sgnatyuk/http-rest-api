@@ -1,0 +1,4 @@
+bind_addr = ":8080"
+log_level = "debug"
+database_url = "user=root password=secret host=localhost dbname=restapi_dev sslmode=disable"
+session_key = "super_secret_key"
